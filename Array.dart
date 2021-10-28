@@ -1,25 +1,25 @@
 import 'dart:io';
 
 main() {
-  
-  var nomes = [];
-  bool isTrue = true;
 
-  while (isTrue) {
-    print("\nDigite um nome ou sair para finalizar: ");
-    String text = stdin.readLineSync().toString();
+  // var nomes = [];
+  // bool isTrue = true;
 
-    if (text == "sair") {
-      print("Programa Finzalido");
-      isTrue = false;
-    } else {
-      nomes.add(text);
-    }
-  }
+  // while (isTrue) {
+  //   print("\nDigite um nome ou sair para finalizar: ");
+  //   String text = stdin.readLineSync().toString();
 
-  print("$nomes\n");
+  //   if (text == "sair") {
+  //     print("Programa Finzalido");
+  //     isTrue = false;
+  //   } else {
+  //     nomes.add(text);
+  //   }
+  // }
 
-  var carros = [];
+  // print("$nomes\n");
+
+  List<String> carros = []; // Tipando o array
 
   carros = ["Gol", "Celta", "Kadett", "Agile"];
 
