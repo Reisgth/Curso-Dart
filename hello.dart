@@ -1,15 +1,17 @@
+import 'dart:io';
 main() {
 
-  var idade;
-
+  var input, idade;
+  
   print("Digite a sua idade\n");
 
-  idade = 15;
+  input = stdin.readLineSync();
+  idade = int.parse(input);
 
   if(idade < 18) {
-    print("Ele nao eh maior de idade");
+    print("\nMenor de idade");
   } else {
-    print("Ele eh maior de idade");
+    print("\nMaior de idade");
   }
 
 }
